@@ -32,7 +32,7 @@ public class StudentHandle {
         double rankC = 0;
         //đếm số lượng sinh viên từng loại
         for ( Student student : students) {
-            switch (student.xepLoai()) {  //method inputSubjectScore đã kiểm tra điểm nhập vào (0 -10)
+            switch (student.xepLoai()) {  //method inputSubjectScore đã kiểm tra điểm nhập vào (0- 10)
                 case "A" -> rankA++;      //--> điểm trung bình trong khoảng 0- 10
                 case "B" -> rankB++;      //--> chỉ có 3 loại xếp loại A, B, C và không còn trường hợp nào khác
                 case "C" -> rankC++;      //--> không cần default
