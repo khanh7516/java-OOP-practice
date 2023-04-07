@@ -13,9 +13,10 @@ public class StudentHandle {
         System.out.println("Nhập điểm toán: ");                     //yêu cầu nhập điểm toán
         double mathScore = inputHandle.inputSubjectScore(scanner); //dùng method inputSubjectScore của inputHandle để kiểm tra giá trị nhập vào (0 -10)
         System.out.println("Nhập điểm lý: ");                       //yêu cầu nhập điểm lý
-        double physicScore = Double.parseDouble(scanner.nextLine());
+        double physicScore = inputHandle.inputSubjectScore(scanner);
         System.out.println("Nhập điểm hóa: ");                      //yêu cầu nhập điểm hóa
         double chemisScore = inputHandle.inputPositiveInt(scanner);
+
         return new Student(name, mathScore, physicScore, chemisScore);//hàm khởi tạo có tham số Student được gọi, truyển các tham số tương ứng, trả về đối tượng mới được tạo
     }
     //method in thông tin tất cả các sinh viên trong mảng được truyền vào
