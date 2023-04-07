@@ -15,7 +15,7 @@ public class StudentHandle {
         System.out.println("Nhập điểm lý: ");                       //yêu cầu nhập điểm lý
         double physicScore = inputHandle.inputSubjectScore(scanner);
         System.out.println("Nhập điểm hóa: ");                      //yêu cầu nhập điểm hóa
-        double chemisScore = inputHandle.inputPositiveInt(scanner);
+        double chemisScore = inputHandle.inputSubjectScore(scanner);
 
         return new Student(name, mathScore, physicScore, chemisScore);//hàm khởi tạo có tham số Student được gọi, truyển các tham số tương ứng, trả về đối tượng mới được tạo
     }
