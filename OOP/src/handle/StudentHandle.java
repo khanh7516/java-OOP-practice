@@ -11,7 +11,7 @@ public class StudentHandle {
         System.out.println("Mời nhập tên student thứ " + (i + 1)); //yêu cầu nhập tên
         String name = scanner.nextLine();
         System.out.println("Nhập điểm toán: ");                     //yêu cầu nhập điểm toán
-        double mathScore = inputHandle.inputSubjectScore(scanner); //dùng method inputSubjectScore của inputHandle để kiểm tra giá trị nhập vào (0 -10)
+        double mathScore = inputHandle.inputSubjectScore(scanner); //dùng method inputSubjectScore của inputHandle để kiểm tra giá trị nhập vào (0- 10)
         System.out.println("Nhập điểm lý: ");                       //yêu cầu nhập điểm lý
         double physicScore = inputHandle.inputSubjectScore(scanner);
         System.out.println("Nhập điểm hóa: ");                      //yêu cầu nhập điểm hóa
